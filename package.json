@@ -4,13 +4,14 @@
   "version": "0.1.0",
   "description": "A Strapi application",
   "scripts": {
-    "develop": "strapi develop",
-    "start": "strapi start",
-    "build": "strapi build",
+    "develop": "NODE_ENV=development strapi develop",
+    "start": "NODE_ENV=production strapi start",
+    "build": "NODE_ENV=production strapi build",
     "strapi": "strapi"
   },
   "dependencies": {
     "knex": "0.21.18",
+    "mysql": "^2.18.1",
     "sqlite3": "5.0.0",
     "strapi": "3.5.4",
     "strapi-admin": "3.5.4",
