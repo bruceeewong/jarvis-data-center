@@ -8,7 +8,7 @@ module.exports = {
     {
       name: 'jarvis-data-center-dev',
       script: 'yarn',
-      args: 'develop'
+      args: 'develop:cloud'
     }
   ]
 }
